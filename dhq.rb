@@ -5,21 +5,21 @@
 class Dhq < Formula
   desc "DeployHQ CLI — deploy from your terminal"
   homepage "https://www.deployhq.com"
-  version "0.8.1"
+  version "0.8.2"
   license "MIT"
 
   on_macos do
     if Hardware::CPU.intel?
-      url "https://github.com/deployhq/deployhq-cli/releases/download/v0.8.1/dhq_0.8.1_darwin_amd64.tar.gz"
-      sha256 "38dfe49de0cd4d5f95785cd456b6099055ddfcafe97d5be24b49ebd6cf53717a"
+      url "https://github.com/deployhq/deployhq-cli/releases/download/v0.8.2/dhq_0.8.2_darwin_amd64.tar.gz"
+      sha256 "396bc11c0c4dcef31fc76ce5f1158695c70a233d06e77b504841ee0a648b6002"
 
       define_method(:install) do
         bin.install "dhq"
       end
     end
     if Hardware::CPU.arm?
-      url "https://github.com/deployhq/deployhq-cli/releases/download/v0.8.1/dhq_0.8.1_darwin_arm64.tar.gz"
-      sha256 "5f2f86b0e62f59ae6fa27ed883b542ae57c53a7f48d024b159d0e3117d02c5b5"
+      url "https://github.com/deployhq/deployhq-cli/releases/download/v0.8.2/dhq_0.8.2_darwin_arm64.tar.gz"
+      sha256 "4cbb24677ba49f332aba6e9869dbbe6eb0f265f3eb185322ff930cf2fc5f57c0"
 
       define_method(:install) do
         bin.install "dhq"
@@ -29,15 +29,15 @@ class Dhq < Formula
 
   on_linux do
     if Hardware::CPU.intel? && Hardware::CPU.is_64_bit?
-      url "https://github.com/deployhq/deployhq-cli/releases/download/v0.8.1/dhq_0.8.1_linux_amd64.tar.gz"
-      sha256 "6c96c69566b2de59e15923e0ec379e7ba57396cf3b2fac0a0a56ebe875113712"
+      url "https://github.com/deployhq/deployhq-cli/releases/download/v0.8.2/dhq_0.8.2_linux_amd64.tar.gz"
+      sha256 "39e24a7960d2846f502c1ac2cd48f0b5419b8df5360173705a400018fc6d40dd"
       define_method(:install) do
         bin.install "dhq"
       end
     end
     if Hardware::CPU.arm? && Hardware::CPU.is_64_bit?
-      url "https://github.com/deployhq/deployhq-cli/releases/download/v0.8.1/dhq_0.8.1_linux_arm64.tar.gz"
-      sha256 "9a2098bb1db333e950ee8491d349fef5bf04d4f03c25abe651f58be0fa8f37f5"
+      url "https://github.com/deployhq/deployhq-cli/releases/download/v0.8.2/dhq_0.8.2_linux_arm64.tar.gz"
+      sha256 "b68043aea15c5e248a8dfeabdf3b54dcc08e06e86a32410825700cfb0692d160"
       define_method(:install) do
         bin.install "dhq"
       end
